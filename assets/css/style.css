@@ -1,0 +1,269 @@
+/*all heading fonts and styles*/
+
+h1 {
+    
+    color: white;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    border-color: #ccc;
+    background-color: #4aaaa5;
+    text-align: center;
+    padding: 1px;
+    float: left;
+    /*margin: 20px;*/
+}
+h2 {  
+    
+    color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    border-bottom: solid gray 2px;
+    padding-bottom: 25px;
+    
+    }
+
+/*Regular font color for paragaphs and all text #777*/
+
+body { 
+    background-image: url("../images/bg.png");
+    color: #777;
+    font-family: 'Arial', 'Helvectica Neue', Helvetica, sans-serif;
+    /*width: 960px;*/
+    margin: 0px;
+    /*border: 3px solid green;*/
+    }
+
+    .pagecontent{
+
+        margin-top: 20px;
+    }
+
+/*header {
+    height: 50px;
+    margin-bottom: 25px;
+    background-color: white;
+    }
+*/
+
+/*navigation style*/
+  .topmenu {
+
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    /*font-size: 100%;*/
+    display: inline-block;
+    /*background-color: white;*/
+    /*margin: 0 auto;*/
+    /*height: 200px;*/
+    width: 300px;
+    height: 100%;
+    /*float: right;*/
+    /*border: 3px solid yellow;*/
+    float: none;
+    vertical-align: top;
+    left: 773px;
+    position: absolute;
+    top: 30px;
+    
+}
+/*container for the page menu*/
+.pagemenu {
+
+    background-color: white;
+    vertical-align: top;
+    height: 80px;
+}
+
+/* my name styling*/
+#myName {
+
+    /*margin-left: 20px;*/
+    /*margin-bottom: 10px;*/
+    text-align: center;
+    padding:0;
+    background-color: #4aaaa5;
+    display: inline-block;
+    position: relative;
+    left: 30px;
+    /*border: 3px solid orange;*/
+    display: inline-block;
+   }
+
+/*Menulink styling*/
+a.menulink {
+
+    font-color: #77777;
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+ }
+
+
+/*Main content background color #fff, border color #ddd
+
+main-content {
+    
+    background-color: #fff;
+    border-color: #ddd;
+    width: 650px;
+    border: 3px solid pink;
+}
+*/
+
+/*Sidebar styling*/
+
+#sidebar1 {
+
+    width: 270px;
+    margin-left: 40px;
+    padding: 25px;
+    /*height: auto;*/
+    background-color: white;
+    text-align: center;
+    /*float: right;*/
+    /*border: 3px solid red;*/
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+   }
+       
+
+/* About me id styling*/
+
+#aboutMe {
+ 
+    background-color: white;
+    width: 650px;
+    height: 400px;
+    padding: 25px;
+    /*margin-top: 300px;*/
+    display: inline-block;
+    /*border: 3px solid blue;*/
+    margin-left: 20px;
+
+}
+
+/*Profile photo styling*/
+#mypic{
+
+    float: left;
+    margin-right: 5px;
+}
+
+/* recentwork id styling*/
+
+#recentwork {
+ 
+    background-color: white;
+    width: 650px;
+    height: 1000px;
+    padding: 25px;
+    /*margin-top: 300px;*/
+    display: inline-block;
+    /*border: 3px solid blue;*/
+    margin-left: 20px;
+
+}
+
+
+/*styling for small portfolio pictures*/
+
+.smallpic {
+
+    width: 300px; 
+    height: 300px; 
+    float: left; 
+    margin-right: 20px;
+    margin-top:5px; 
+    overflow: hidden;
+    /*position:absolute;*/
+    /*position:relative;*/
+}
+
+/*styles for picture banners*/
+
+h3 {
+    color: white;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-weight: normal;
+    font-size: 20px;
+    border-color: #ccc;
+    background-color: #4aaaa5;
+    text-align: center;
+    padding-top: 6px;
+    float: left;
+    height: 30px;
+    width: 300px;
+    z-index: 100;
+    position: absolute;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 210px;
+
+    /*position: absolute;*/
+    /*margin: 20px;*/
+
+}
+
+/*button style*/
+
+button {
+
+background-color: #4aaaa5;
+border: none;
+text-decoration: none;
+padding: 10px;
+color: white;
+
+}
+
+
+/*
+#carban{
+
+}
+
+#catwalkban {
+
+
+}
+
+#poitionban {
+
+
+}
+
+#recordban{
+
+
+}
+*/
+
+/*Footer*/
+
+footer{
+    
+    background-color: #666;
+    height: 50px;
+    font-size: 12px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    bottom: 0;
+    position: fixed;
+    border-top: solid #4aaaa5 10px;
+}
+
+/*responsive design, viewing and media queries*/
+/*use viewport tag*/
+
+/*desktop*/
+@media screen and (max-width: 980px) {}
+
+/*tablet*/
+@media screen and (max-width: 768px){}
+
+
+/*phone in landscape */
+@media screen and (max-width: 640px) {
+
+    /*header should be static*/
+}
