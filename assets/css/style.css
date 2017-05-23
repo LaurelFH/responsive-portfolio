@@ -237,7 +237,7 @@ footer{
 /*desktop*/
 @media screen and (max-width: 980px) {
 
-/* About me id styling*/
+/* About me id OR the page container shifts here? styling*/
 
 #aboutMe {
  
@@ -263,11 +263,29 @@ footer{
     float: left; 
     margin-right: 20px;
     margin-top:5px; 
-    overflow: hidden;
+    /*overflow: hidden;*/
     /*position:absolute;*/
     /*position:relative;*/
 }
 
+
+
+/*tablet viewport*/
+
+@media screen and (max-width: 768px){ 
+
+    /*Sidebar styling*/
+
+#sidebar1 {
+
+    width: 300px;
+    margin-top: 40px;
+    padding: 25px;
+    background-color: white;
+    text-align: center;
+
+   } 
+}
 
 /*Footer*/
 
@@ -286,45 +304,6 @@ footer{
 }
 
 
-
-
-
-
-
-
-}
-
-/*tablet
-@media screen and (max-width: 768px){ 
-
-    /*Sidebar styling*/
-
-#sidebar1 {
-
-    width: 270px;
-    margin-top: 40px;
-    padding: 25px;
-    /*height: auto;*/
-    background-color: white;
-    text-align: center;
-    /*float: right;*/
-    /*border: 3px solid red;*/
-    /*display: inline-block;*/
-    /*vertical-align: top;
-    position: absolute;
-    clear: both;
-
-   } 
-}
-*/
-
-
-
-
-
-
-
-*/
 
 /*phone in landscape 394 width, static headers?
 @media screen and (max-width: 640px) {
