@@ -1,290 +1,362 @@
-/*all heading fonts and styles*/
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 34px;
+  color: #777;
+  background: url("../images/bg.png");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* general */
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  clear: both;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-bottom: 20px;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-weight: 700;
+  color: #4aaaa5;
+}
 
 h1 {
-    
-    color: white;
-    font-family: 'Georgia', Times, Times New Roman, serif;
-    border-color: #ccc;
-    background-color: #4aaaa5;
-    text-align: center;
-    padding: 1px;
-    float: left;
-    /*margin: 20px;*/
-}
-h2 {  
-    
-    color: #4aaaa5;
-    font-family: 'Georgia', Times, Times New Roman, serif;
-    border-bottom: solid gray 2px;
-    padding-bottom: 25px;
-    
-    }
-
-/*Regular font color for paragaphs and all text #777*/
-
-body { 
-    background-image: url("../images/bg.png");
-    color: #777;
-    font-family: 'Arial', 'Helvectica Neue', Helvetica, sans-serif;
-    /*width: 960px;*/
-    margin: 0px;
-    /*border: 3px solid green;*/
-    }
-
-    .pagecontent{
-
-        margin-top: 20px;
-    }
-
-/*header {
-    height: 50px;
-    margin-bottom: 25px;
-    background-color: white;
-    }
-*/
-
-/*navigation style*/
-  .topmenu {
-
-    font-family: 'Georgia', Times, Times New Roman, serif;
-    /*font-size: 100%;*/
-    display: inline-block;
-    /*background-color: white;*/
-    /*margin: 0 auto;*/
-    /*height: 200px;*/
-    width: 300px;
-    height: 100%;
-    /*float: right;*/
-    /*border: 3px solid yellow;*/
-    float: none;
-    vertical-align: top;
-    left: 773px;
-    position: absolute;
-    top: 30px;
-    
-}
-/*container for the page menu*/
-.pagemenu {
-
-    background-color: white;
-    vertical-align: top;
-    height: 80px;
+  padding-bottom: 20px;
+  font-size: 30px;
+  line-height: 49px;
+  border-bottom: 3px solid #ddd;
 }
 
-/* my name styling*/
-#myName {
-
-    /*margin-left: 20px;*/
-    /*margin-bottom: 10px;*/
-    text-align: center;
-    padding:0;
-    background-color: #4aaaa5;
-    display: inline-block;
-    position: relative;
-    left: 30px;
-    /*border: 3px solid orange;*/
-    display: inline-block;
-   }
-
-/*Menulink styling*/
-a.menulink {
-
-    font-color: #77777;
-    font-family: Arial, sans-serif;
-    font-size: 25px;
-    text-decoration: none;
- }
-
-
-/*Main content background color #fff, border color #ddd
-
-main-content {
-    
-    background-color: #fff;
-    border-color: #ddd;
-    width: 650px;
-    border: 3px solid pink;
-}
-*/
-
-/*Sidebar styling*/
-
-#sidebar1 {
-
-    width: 270px;
-    margin-left: 40px;
-    padding: 25px;
-    /*height: auto;*/
-    background-color: white;
-    text-align: center;
-    /*float: right;*/
-    /*border: 3px solid red;*/
-    display: inline-block;
-    vertical-align: top;
-    position: absolute;
-   }
-       
-
-/* About me id styling*/
-
-#aboutMe {
- 
-    background-color: white;
-    width: 650px;
-    height: 400px;
-    padding: 25px;
-    /*margin-top: 300px;*/
-    display: inline-block;
-    /*border: 3px solid blue;*/
-    margin-left: 20px;
-
-}
-
-/*Profile photo styling*/
-#mypic{
-
-    float: left;
-    margin-right: 5px;
-}
-
-/* recentwork id styling*/
-
-#recentwork {
- 
-    background-color: white;
-    width: 650px;
-    height: 1000px;
-    padding: 25px;
-    /*margin-top: 300px;*/
-    display: inline-block;
-    /*border: 3px solid blue;*/
-    margin-left: 20px;
-
-}
-
-
-/*styling for small portfolio pictures*/
-
-.smallpic {
-
-    width: 300px; 
-    height: 300px; 
-    float: left; 
-    margin-right: 20px;
-    margin-top:5px; 
-    overflow: hidden;
-    /*position:absolute;*/
-    /*position:relative;*/
-}
-
-/*styles for picture banners*/
-
+h2,
 h3 {
-    color: white;
-    font-family: 'Georgia', Times, Times New Roman, serif;
-    font-weight: normal;
-    font-size: 20px;
-    border-color: #ccc;
-    background-color: #4aaaa5;
-    text-align: center;
-    padding-top: 6px;
-    float: left;
-    height: 30px;
-    width: 300px;
-    z-index: 100;
-    position: absolute;
-    display: inline-block;
-    vertical-align: middle;
-    margin-top: 210px;
-
-    /*position: absolute;*/
-    /*margin: 20px;*/
-
+  font-size: 22px;
 }
 
-/*button style*/
+/* header */
 
-button {
+#masthead {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  margin: 0 0 30px;
+  overflow: auto;
+  color: #fff;
+  background: #fff;
+  border-bottom: 2px solid #ccc;
+}
 
-background-color: #4aaaa5;
-border: none;
-text-decoration: none;
-padding: 10px;
-color: white;
+#logo {
+  float: left;
+  width: 250px;
+  height: 90px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 90px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background: #4aaaa5;
+}
 
+nav {
+  float: right;
+  margin-top: 25px;
+}
+
+nav a {
+  display: inline-block;
+  padding-left: 15px;
+  margin-left: 15px;
+  line-height: 18px;
+  color: #999;
+  text-decoration: none;
+  border-left: 1px solid #efefef;
+}
+
+nav a:first-child {
+  border-left: 0 none;
+}
+
+/* footer */
+
+footer {
+  padding: 30px 0;
+  clear: both;
+  font-size: 12px;
+  color: #fff;
+  color: #ccc;
+  text-align: center;
+  background: #666;
+  border-top: 8px solid #4aaaa5;
+}
+
+/* sidebar */
+
+.sidebar {
+  float: right;
+  width: 100%;
+  max-width: 270px;
+  padding: 30px;
+  margin-bottom: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+h3,
+.sidebar h2 {
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+  line-height: 22px;
+  border-bottom: 2px solid #eee;
+}
+
+.social {
+  width: 62px;
+  height: 62px;
+  margin-top: 8px;
+  margin-right: 5px;
+}
+
+.social:last-child {
+  margin-right: 0;
+}
+
+/* main */
+
+#main-container {
+  padding-top: 130px;
+}
+
+.main-section {
+  float: left;
+  width: 100%;
+  max-width: 650px;
+  padding: 30px;
+  margin: 0 0 40px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+/* portfolio page */
+
+.work {
+  position: relative;
+  float: left;
+  width: 274px;
+  margin: 20px 0 25px;
+  overflow: auto;
+}
+
+.work:nth-child(even) {
+  margin-right: 40px;
+}
+
+.work img {
+  width: 100%;
+  border: 0 none;
+  opacity: 0.8;
+}
+
+.work h3 {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  background: #4aaaa5;
+  border-bottom: 0;
+}
+
+.auth-image {
+  float: left;
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 25px;
+}
+
+/* contact page */
+
+#contact-form ul {
+  margin-bottom: 20px;
+}
+
+#contact-form li {
+  margin-bottom: 10px;
+}
+
+label,
+input[type=text],
+input[type=email],
+textarea {
+  display: block;
+  width: 100%;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  height: 35px;
+  padding: 0 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+}
+
+textarea {
+  height: 200px;
+}
+
+input[type=submit] {
+  padding: 10px 30px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  background: #4aaaa5;
+  border: 0 none;
 }
 
 
-/*Footer*/
+/*responsive design section for viewing and media queries*/
 
-footer{
-    
-    background-color: #666;
-    height: 50px;
-    font-size: 12px;
-    color: white;
-    width: 100%;
-    text-align: center;
-    padding-top: 10px;
-    bottom: 0;
-    position: fixed;
-    border-top: solid #4aaaa5 10px;
-}
-
-/*responsive design, viewing and media queries*/
-/*use viewport tag and consider what elements need to move!*/
-
-/*desktop*/
+/*desktop viewing*/
 @media screen and (max-width: 980px) {
 
-/* About me id OR the page container shifts here? styling*/
+/* main section*/
 
-#aboutMe {
+.main-section {
  
     background-color: white;
-    width: 250px;
-    height: 700px;
-    padding: 25px;
+    width: 416px;
+    /*height: 845px;
+    /*padding: 25px;
     /*margin-top: 300px;*/
-    display: inline-block;
-    /*border: 3px solid blue;*/
-    margin-left: 20px;
-
+    /*display: inline-block;
+    border: 3px solid blue;*/
+    float: left;
+    margin-left: 125px;
 }
 
+/*main teacup profile image*/
+.auth-image {
 
+  width: 360px;
+  height: 269px;
+}
+
+/*.container {
+
+  margin: 0 auto;
+} */
+/*my name*/
+#logo {
+
+  margin-left: 125px;
+}
+
+/*tells sidebar to stay put*/
+
+.sidebar {
+
+  width:266px;
+  float: left;
+ margin-left: 36px;
+
+}
        
 /*styling for small portfolio pictures*/
 
-.smallpic {
+.work {
 
-    width: 300px; 
-    height: 300px; 
-    float: left; 
-    margin-right: 20px;
+
+   margin-left: 40px;
+    width: 260px; 
+    height: 267px; 
+    overflow: hidden;
+    /*float: left; 
+    /*margin-right: 20px;
     margin-top:5px; 
-    /*overflow: hidden;*/
-    /*position:absolute;*/
+        /*position:absolute;*/
     /*position:relative;*/
-}
+    /*margin-left: 40px;*/
 
+  }
 
-
-/*tablet viewport*/
+/*tablet viewport for 768px*/
 
 @media screen and (max-width: 768px){ 
 
-    /*Sidebar styling*/
+nav {
+margin-right: 25px;
 
-#sidebar1 {
+}
 
-    width: 300px;
-    margin-top: 40px;
-    padding: 25px;
-    background-color: white;
-    text-align: center;
+/*main image*/
 
-   } 
+.auth-image {
+
+width: 330px;
+
+ }
+
+.container {
+margin: 0 auto;
+/*width: 768px;*/
+}
+    
+ /*the text inside th esidebar*/   
+#connect {
+
+  max-width: 725px;
+  width: 510px;
+  margin-top: 44px;
+  margin-left: 25px;
+  height: 148px;
+}
+
+.main-section {
+
+  width: 730px;
+  margin-left: 25px;
+  display: block;
+}
+
+/*my name*/
+#logo {
+
+  margin-left: 25px;
+}
+/*container for the sidebar*/
+.sidebar {
+
+  margin-left: 25px;
+  max-width: 720px;
+  width: 650px;
+  float: left;
+  margin-right: 50px;
+
 }
 
 /*Footer*/
@@ -303,11 +375,84 @@ footer{
     border-top: solid #4aaaa5 10px;
 }
 
+/*phone in landscape 394 width, static headers?*/
 
-
-/*phone in landscape 394 width, static headers?
 @media screen and (max-width: 640px) {
 
+/*main header across screen*/
+#masthead {
+  max-width: 640px;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
 
+/*profile image*/
+.auth-image {
 
-}*/
+  width: 540px;
+  height: 402px;
+  padding: 5px;
+ }
+
+.container {
+margin: 0 auto;
+max-width: 640px;
+width: 600px;
+
+}
+    /*sidebar's container*/
+#connect {
+
+  max-width: 640px;
+  width: 510px;
+  margin-top: 44px;
+  margin-left: 50px;
+  height: 148px;
+}
+
+.main-section {
+
+  width: 600px;
+  margin-left: 25px;
+  display: block;
+  margin-top: 40px;
+}
+/*my name*/
+#logo {
+
+  z-index: 10;
+  width: 700px;
+  margin: 0 auto;
+  border-right: 10px solid #4aaaa5;
+}
+
+/*links inside of the menu*/
+nav a {
+
+padding-left: 50px;
+padding-right: 50px;
+
+}
+
+/*container for the sidebar*/
+.sidebar {
+
+  margin-left: 50px;
+  max-width: 640px;
+  width: 640px;
+  float: left;
+  padding: 0px;
+  margin: 0px;
+  /*border: blue 5px solid;*/
+  margin-left: 25px;
+
+}
+/*all small images on portfolio*/
+.work {
+
+  width: 450px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  overflow: hidden;
+}
